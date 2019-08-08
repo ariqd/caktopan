@@ -5,18 +5,15 @@
     <title>@yield("title")</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <!--===============================================================================================-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    {{-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"> --}}
+    {{-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script> --}}
     <!--===============================================================================================-->
     <link rel="icon" type="image/png" href="{{ asset('assets/images/icons/favicon.png') }}" />
     <!--===============================================================================================-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="{{ asset('assets/vendor/bootstrap/css/bootstrap.min.css') }}">
-
     <!--===============================================================================================-->
     <link rel="stylesheet" type="text/css"
         href="{{ asset('assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css') }}">
@@ -44,6 +41,7 @@
     <!--===============================================================================================-->
     <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/util.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/main.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/caktopan.css') }}">
     <!--===============================================================================================-->
     @stack('css')
 </head>
@@ -54,9 +52,9 @@
     <header class="header1">
         <!-- Header desktop -->
         <div class="container-menu-header">
-          <div class="blackLine col-lg-12">
-            <p>JL. WONOSARI NO. 77, PEKANBARU  |  DAILY 16:00 - 00:00</p>
-          </div>
+            <div class="blackLine col-lg-12">
+                <p class="font-roadway text-secondary">JL. WONOSARI NO. 77, PEKANBARU | DAILY 16:00 - 00:00</p>
+            </div>
             <div class="wrap_header" id="navbar">
 
                 <!-- Logo -->
@@ -158,38 +156,27 @@
     @yield("content")
 
     <!-- Footer -->
-    <footer class="bg-dark py-4 text-white">
-        <div class="text-center pb-5 mt-3" style="border-bottom: 5px solid #f44336">
-            <h1 class="mb-3">HUBUNGI KAMI</h1>
-            <a>
-                Gedung Kolega<br>
-                Jl. Veteran No 10 Lantai 2<br>
-                Sumur - Bandung<br>
-                Telp: 08991227888
-            </a>
-        </div>
-
-
-        <div class="container pt-4">
-            <div class="row text-center">
-                <div class="col-12 col-lg-4">
-                    <a href="facebook.com">
-                        <img src="{{ asset('assets/images/icons/fb.png') }}" alt="facebook-icon" class="img-fluid" style="width: 35px">
-                    </a>
-                    <a href="twitter.com">
-                        <img src="{{ asset('assets/images/icons/tw.png') }}" alt="twitter-icon" class="img-fluid" style="width: 35px">
-                    </a>
+    <footer class="bg-dark text-white font-roadway" style="border-bottom: 5px solid #f44336">
+        <div class="container py-5">
+            <div class="row px-5 pt-3 pb-5">
+                <div class="col-3">
+                    <h2 class="mb-3">ADDRESS</h2>
+                    <h5>JL. WONOSARI NO. 77 PEKANBARU</h5>
                 </div>
-                <div class="col-12 col-lg-4">
-                    <h4 class="mt-2 text-secondary">&copy;{{ date("Y") }} Unicorn Tracking</h4>
+                <div class="col-3">
+                    <h2 class="mb-3">HOURS</h2>
+                    <h5>DAILY 16:00 - 00:00</h5>
                 </div>
-                <div class="col-12 col-lg-4">
-                    <div class="d-flex align-items-center">
-                        <a href="" class="text-white px-2 border-right">Our Services</a>
-                        <a href="" class="text-white px-2 border-right">About Us</a>
-                        <a href="" class="text-white px-2 border-right">News</a>
-                        <a href="" class="text-white px-2">Contact Us</a>
-                    </div>
+                <div class="col-3">
+                    <h2 class="mb-3">CONTACT</h2>
+                    <h5>081-1767-8055</h5>
+                </div>
+            </div>
+            <div class="row px-5 pt-3">
+                <div class="col-12">
+                    <p class="font-roadway text-white">
+                        &copy;2019 CAK TOPAN | MADE BY <a href="#" class="font-roadway text-white text-underline">MAKAYASA ARECA</a>
+                    </p>
                 </div>
             </div>
         </div>
@@ -208,13 +195,20 @@
     <!-- Container Selection1 -->
     <div id="dropDownSelect1"></div>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <!--===============================================================================================-->
-    <script type="text/javascript" src="{{ asset('assets/vendor/jquery/jquery-3.2.1.min.js') }}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    {{-- <script type="text/javascript" src="{{ asset('assets/vendor/jquery/jquery-3.2.1.min.js') }}"></script> --}}
     <!--===============================================================================================-->
     <script type="text/javascript" src="{{ asset('assets/vendor/animsition/js/animsition.min.js') }}"></script>
     <!--===============================================================================================-->
-    <script type="text/javascript" src="{{ asset('assets/vendor/bootstrap/js/popper.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('assets/vendor/bootstrap/js/bootstrap.min.js') }}"></script>
+    {{-- <script type="text/javascript" src="{{ asset('assets/vendor/bootstrap/js/popper.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('assets/vendor/bootstrap/js/bootstrap.min.js') }}"></script> --}}
     <!--===============================================================================================-->
     <script type="text/javascript" src="{{ asset('assets/vendor/select2/select2.min.js') }}"></script>
     <script type="text/javascript">
@@ -253,19 +247,22 @@
     <!--===============================================================================================-->
     <script src="{{ asset('assets/js/main.js') }}"></script>
     <script>
-window.onscroll = function() {myFunction()};
+        window.onscroll = function () {
+            myFunction()
+        };
 
-var navbar = document.getElementById("navbar");
-var sticky = navbar.offsetTop;
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
 
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
-  } else {
-    navbar.classList.remove("sticky");
-  }
-}
-</script>
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
+
+    </script>
 
     @stack('js')
 

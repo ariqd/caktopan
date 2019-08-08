@@ -1,0 +1,17 @@
+.btn-caktopan {
+    border: 2px solid #212121!important;
+    font-family: 'Roadway', sans-serif;
+    font-size: 14pt;
+    border-radius: 0;
+}
+
+.btn-caktopan.btn-caktopan-white {
+    border: 2px solid #fafafa!important;
+    font-family: 'Roadway', sans-serif;
+    font-size: 14pt;
+    border-radius: 0;
+}
+
+.btn-caktopan:hover {
+    text-decoration: underline;
+}
