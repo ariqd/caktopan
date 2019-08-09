@@ -1,0 +1,39 @@
+.btn-caktopan {
+    border: 2px solid #212121 !important;
+    font-family: 'Roadway', sans-serif;
+    font-size: 14pt;
+    border-radius: 0;
+}
+
+.btn-caktopan.btn-caktopan-white {
+    border: 2px solid #fafafa !important;
+    font-family: 'Roadway', sans-serif;
+    font-size: 14pt;
+    border-radius: 0;
+}
+
+.btn-caktopan:hover {
+    text-decoration: underline;
+}
+
+.img-relative {
+    position: relative;
+    text-align: center;
+    color: white;
+    filter: brightness(85%);
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.text-lg {
+    font-size: 3rem;
+}
+
+.text-xl {
+    font-size: 3.5rem;
+}

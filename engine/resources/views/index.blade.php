@@ -8,34 +8,11 @@ Home
 <link rel="stylesheet" href="{{ asset('assets/vendor/slick/slick.css') }}">
 <link rel="stylesheet" href="{{ asset('assets/vendor/slick/slick-theme.css') }}">
 <style>
-    .img-relative {
-        position: relative;
-        text-align: center;
-        color: white;
-        filter: brightness(85%);
-    }
-
-    .centered {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-
-    .text-lg {
-        font-size: 3rem;
-    }
-
-    .text-xl {
-        font-size: 3.5rem;
-    }
-
     .slick-slide {
         position: relative;
     }
 
     .overlay-on-hover img {
-        /* opacity: 1; */
         transition: .5s ease;
         backface-visibility: hidden;
     }
@@ -48,7 +25,6 @@ Home
     }
 
     .overlay-on-hover:hover img {
-        /* opacity: 0.3; */
         filter: brightness(50%);
     }
 

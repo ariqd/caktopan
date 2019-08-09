@@ -27,7 +27,7 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('assets/vendor/lightbox2/css/lightbox.min.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/util.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/main.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/caktopan.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/caktopan.css') }}">
     @stack('css')
 </head>
 
@@ -55,16 +55,16 @@
                                 <a href="{{ url('/') }}">HOME</a>
                             </li>
 
-                            <li class="{{ request()->is('products*') ? 'sale-noti' : '' }}">
-                                <a href="{{ url('products?filter=suspensi') }}">MENU</a>
-                            </li>
-
-                            <li class="{{ request()->is('products*') ? 'sale-noti' : '' }}">
-                                <a href="{{ url('products?filter=suspensi') }}">BLOG</a>
+                            <li class="{{ request()->is('menu*') ? 'sale-noti' : '' }}">
+                                <a href="{{ url('menu') }}">MENU</a>
                             </li>
 
                             <li class="{{ request()->is('blog*') ? 'sale-noti' : '' }}">
-                                <a href="{{ url('blog') }}">ABOUT US</a>
+                                <a href="{{ url('blog') }}">BLOG</a>
+                            </li>
+
+                            <li class="{{ request()->is('about*') ? 'sale-noti' : '' }}">
+                                <a href="{{ url('about') }}">ABOUT US</a>
                             </li>
                         </ul>
                     </nav>
