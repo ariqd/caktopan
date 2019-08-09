@@ -154,6 +154,7 @@ textarea {
 
 .font-roadway {
   font-family: 'Roadway', sans-serif;
+  color: #212121;
 }
 
 input:focus::-webkit-input-placeholder {
@@ -996,7 +997,7 @@ ol.carousel-indicators li.active {
 
 li.sale-noti > a {
     color: #706D6D;
-
+    border-bottom: 1px solid #616161;
 }
 
 .main_menu > li:hover > a {
