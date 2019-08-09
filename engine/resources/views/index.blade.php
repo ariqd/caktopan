@@ -242,7 +242,7 @@ Home
 <section>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-12">
+            <div class="col-12 pt-3">
                 <h5 class="text-center">@<span class="font-roadway">CAKTOPANPENYETAN</span></h5>
             </div>
         </div>
