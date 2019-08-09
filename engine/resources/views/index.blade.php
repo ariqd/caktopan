@@ -56,6 +56,19 @@ Home
         opacity: 1;
     }
 
+    .slick-prev {
+    left: 50px;
+    z-index: 1;
+    }
+
+    .slick-next {
+      right: 50px;
+    }
+
+    .slick-next:before,.slick-prev:before{
+      font-size: 50px;
+    }
+
 </style>
 @endpush
 
@@ -71,31 +84,58 @@ Home
         autoplay: true
     });
 
+    $(document).ready(function(){
+     $('.homeslide').slick({
+
+     });
+   });
+
 </script>
 @endpush
 
 @section("content")
-<div class="parallax home1 img-relative"></div>
-<h1 class="centered text-center text-white font-weight-bolder text-xl">GEPREK JAWA TIMUR</h1>
+
+<div class="homeslide">
+  <div>
+    <div class="crop1">
+    <img src="{{ asset('assets/images/home1.png') }}" alt="">
+    <h1 class="centered text-center text-white font-weight-bolder text-xl">GEPREK JAWA TIMUR</h1>
+  </div>
+    </div>
+
+    <div>
+      <div class="crop1">
+      <img src="{{ asset('assets/images/home1.png') }}" alt="">
+      <h1 class="centered text-center text-white font-weight-bolder text-xl">GEPREK JAWA TIMUR</h1>
+    </div>
+      </div>
+</div>
 
 <section>
     <div class="container-fluid pl-0 pr-0">
+
         <div class="row align-middle no-gutters">
-            <div class="col-12 col-lg-4">
+
+
+            <div class="col-12 col-lg-4 crop2">
                 <a href="">
                     <img src="{{ asset('assets/images/penyetan-blur.png') }}" alt=""
                         class="img-fluid img-relative w-100 h-100">
                     <h1 class="centered text-white font-weight-bolder text-lg">PENYETAN</h1>
                 </a>
             </div>
-            <div class="col-12 col-lg-4">
+
+
+            <div class="col-12 col-lg-4 crop2">
                 <a href="">
                     <img src="{{ asset('assets/images/sambal-blur.png') }}" alt=""
                         class="img-fluid img-relative w-100 h-100">
                     <h1 class="centered text-white font-weight-bolder text-lg">SAMBAL</h1>
                 </a>
             </div>
-            <div class="col-12 col-lg-4">
+
+
+            <div class="col-12 col-lg-4 crop2">
                 <a href="">
                     <img src="{{ asset('assets/images/express-blur.png') }}" alt=""
                         class="img-fluid img-relative w-100 h-100">
@@ -128,9 +168,8 @@ Home
 <section>
     <div class="container-fluid pl-0">
         <div class="row pr-0">
-            <div class="col-12 pr-0">
-                <img src="{{ asset('assets/images/sambal-wide.png') }}" alt="" class="img-fluid w-100 img-relative">
-                <div class="centered text-center">
+            <div class="col-12 pr-0 parallax sambalIm">
+                  <div class="centered text-center">
                     <h1 class="text-white font-weight-bolder d-none d-lg-block">MACAM-MACAM SAMBAL</h1>
                     <h4 class="text-white font-weight-bolder d-block d-lg-none">MACAM-MACAM SAMBAL</h4>
                     <a href="#" class="btn btn-caktopan btn-caktopan-white text-white mt-3 w-25">MENU</a>
@@ -162,8 +201,7 @@ Home
 <section>
     <div class="container-fluid pl-0">
         <div class="row pr-0">
-            <div class="col-12 pr-0">
-                <img src="{{ asset('assets/images/lokasi.png') }}" alt="" class="img-fluid w-100 h-100 img-relative">
+            <div class="col-12 pr-0 parallax lokasiIm">
                 <div class="centered text-center">
                     <h1 class="text-white font-weight-bolder d-none d-lg-block">LOKASI KAMI</h1>
                     <h3 class="text-white font-weight-bolder d-block d-lg-none">LOKASI KAMI</h3>
@@ -219,9 +257,8 @@ Home
 <section>
     <div class="container-fluid pl-0">
         <div class="row align-items-center">
-            <div class="col-lg-12">
-                <img src="{{ asset('assets/images/sambals.png') }}" alt="" class="img-fluid w-100">
-            </div>
+            <div class="col-lg-12 parallax sambalIm2">
+          </div>
         </div>
     </div>
 </section>
