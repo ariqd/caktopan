@@ -69,9 +69,15 @@
 
                 <!-- Header Icon -->
                 <div class="header-icons">
-                    <!-- <a href="#" class="header-wrapicon1 dis-block">
-                    <img src="images/icons/icon-header-01.png" class="header-icon1" alt="ICON">
-                </a> -->
+                    <a href="#" class="header-wrapicon1 dis-block">
+                        <img src="{{ asset('assets/images/social-fb.png') }}" class="header-icon1 mr-3" alt="facebook">
+                    </a>
+                    <a href="#" class="header-wrapicon1 dis-block">
+                        <img src="{{ asset('assets/images/social-ig.png') }}" class="header-icon1 mr-3" alt="facebook">
+                    </a>
+                    <a href="#" class="header-wrapicon1 dis-block">
+                        <img src="{{ asset('assets/images/social-wa.png') }}" class="header-icon1" alt="facebook">
+                    </a>
 
 
                     <!-- <div class="header-wrapicon2">
@@ -144,16 +150,16 @@
     <footer class="bg-dark text-white font-roadway" style="border-bottom: 5px solid #f44336">
         <div class="container py-3">
             <div class="row px-5 pt-3 pb-5">
-                <div class="col-3">
-                    <h2 class="mb-3">ADDRESS</h2>
+                <div class="col-12 pt-4 col-lg-3">
+                    <h2 class="mb-2">ADDRESS</h2>
                     <h5>JL. WONOSARI NO. 77 PEKANBARU</h5>
                 </div>
-                <div class="col-3">
-                    <h2 class="mb-3">HOURS</h2>
+                <div class="col-12 pt-4 col-lg-3">
+                    <h2 class="mb-2">HOURS</h2>
                     <h5>DAILY 16:00 - 00:00</h5>
                 </div>
-                <div class="col-3">
-                    <h2 class="mb-3">CONTACT</h2>
+                <div class="col-12 pt-4 col-lg-3">
+                    <h2 class="mb-2">CONTACT</h2>
                     <h5>081-1767-8055</h5>
                 </div>
             </div>
@@ -161,7 +167,7 @@
                 <div class="col-12">
                     <p class="font-roadway text-white">
                         &copy;2019 CAK TOPAN | MADE BY <a href="#"
-                            class="font-roadway text-white text-underline">MAKAYASA ARECA</a>
+                            class="font-roadway text-danger text-underline">MAKAYASA ARECA</a>
                     </p>
                 </div>
             </div>
