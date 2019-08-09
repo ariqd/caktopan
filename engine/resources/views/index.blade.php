@@ -61,6 +61,7 @@ Home
 
 @push('js')
 <script src="{{ asset('assets/vendor/slick/slick.js') }}"></script>
+<script type="text/javascript" src="{{ asset('assets/js/slick-custom.js') }}"></script>
 <script>
     $('.slick').slick({
         infinite: true,
@@ -75,26 +76,26 @@ Home
 
 @section("content")
 <div class="parallax home1 img-relative"></div>
-<h1 class="centered text-white font-weight-bolder text-xl">GEPREK JAWA TIMUR</h1>
+<h1 class="centered text-center text-white font-weight-bolder text-xl">GEPREK JAWA TIMUR</h1>
 
 <section>
     <div class="container-fluid pl-0 pr-0">
         <div class="row align-middle no-gutters">
-            <div class="col-4">
+            <div class="col-12 col-lg-4">
                 <a href="">
                     <img src="{{ asset('assets/images/penyetan-blur.png') }}" alt=""
                         class="img-fluid img-relative w-100 h-100">
                     <h1 class="centered text-white font-weight-bolder text-lg">PENYETAN</h1>
                 </a>
             </div>
-            <div class="col-4">
+            <div class="col-12 col-lg-4">
                 <a href="">
                     <img src="{{ asset('assets/images/sambal-blur.png') }}" alt=""
                         class="img-fluid img-relative w-100 h-100">
                     <h1 class="centered text-white font-weight-bolder text-lg">SAMBAL</h1>
                 </a>
             </div>
-            <div class="col-4">
+            <div class="col-12 col-lg-4">
                 <a href="">
                     <img src="{{ asset('assets/images/express-blur.png') }}" alt=""
                         class="img-fluid img-relative w-100 h-100">
@@ -106,20 +107,19 @@ Home
 </section>
 
 <section>
-    <div class="container-fluid pl-0">
-        <div class="row align-items-center">
+    <div class="container-fluid pr-0 pl-0">
+        <div class="row align-items-center no-gutters">
             <div class="col-lg-6">
-                <img src="{{ asset('assets/images/penyetan-hd.png') }}" alt="" class="img-fluid w-100">
+                <img src="{{ asset('assets/images/penyetan-hd.png') }}" alt="" class="img-fluid w-100 h-100">
             </div>
-            <div class="col-lg-6 w-75 text-center">
-                <h1 class="font-weight-bold">KHAS JAWA TIMUR</h1>
+            <div class="col-lg-6 w-75 mx-auto text-center">
+                <h1 class="mt-5 font-weight-bold">KHAS JAWA TIMUR</h1>
                 <p class="mt-5 w-75 mx-auto">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
                     et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
                     aliquip ex ea commodo consequat.
                 </p>
-                <a href="#" class="btn btn-caktopan mt-5">MENU</a>
-                <!-- <img src="{{ asset('assets/images/home2.png') }}" alt="" class="img-fluid"> -->
+                <a href="#" class="btn btn-caktopan my-5">MENU</a>
             </div>
         </div>
     </div>
@@ -130,10 +130,11 @@ Home
         <div class="row pr-0">
             <div class="col-12 pr-0">
                 <img src="{{ asset('assets/images/sambal-wide.png') }}" alt="" class="img-fluid w-100 img-relative">
-                <h1 class="centered text-white font-weight-bolder text-lg text-center">
-                    MACAM-MACAM SAMBAL
+                <div class="centered text-center">
+                    <h1 class="text-white font-weight-bolder d-none d-lg-block">MACAM-MACAM SAMBAL</h1>
+                    <h4 class="text-white font-weight-bolder d-block d-lg-none">MACAM-MACAM SAMBAL</h4>
                     <a href="#" class="btn btn-caktopan btn-caktopan-white text-white mt-3 w-25">MENU</a>
-                </h1>
+                </div>
             </div>
         </div>
     </div>
@@ -142,16 +143,16 @@ Home
 <section>
     <div class="container-fluid">
         <div class="row align-items-center">
-            <div class="col-lg-6 w-75 text-center">
+            <div class="col-lg-6 w-75 mx-auto text-center mt-5">
                 <h1 class="font-weight-bold">NASI PUTIH DAN UDUK</h1>
                 <p class="mt-5 w-75 mx-auto">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
                     et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
                     aliquip ex ea commodo consequat.
                 </p>
-                <a href="#" class="btn btn-caktopan mt-5">MENU</a>
+                <a href="#" class="btn btn-caktopan my-5">MENU</a>
             </div>
-            <div class="col-lg-6 pr-0">
+            <div class="col-lg-6 pr-0 pl-0">
                 <img src="{{ asset('assets/images/uduk.png') }}" alt="" class="img-fluid w-100 h-100">
             </div>
         </div>
@@ -162,11 +163,12 @@ Home
     <div class="container-fluid pl-0">
         <div class="row pr-0">
             <div class="col-12 pr-0">
-                <img src="{{ asset('assets/images/lokasi.png') }}" alt="" class="img-fluid w-100 img-relative">
-                <h1 class="centered text-white font-weight-bolder text-lg text-center">
-                    LOKASI KAMI
-                    <a href="#" class="btn btn-caktopan btn-caktopan-white text-white mt-3 w-25">ABPUT US</a>
-                </h1>
+                <img src="{{ asset('assets/images/lokasi.png') }}" alt="" class="img-fluid w-100 h-100 img-relative">
+                <div class="centered text-center">
+                    <h1 class="text-white font-weight-bolder d-none d-lg-block">LOKASI KAMI</h1>
+                    <h3 class="text-white font-weight-bolder d-block d-lg-none">LOKASI KAMI</h3>
+                    <a href="#" class="btn btn-caktopan btn-caktopan-white text-white mt-3 w-50">ABOUT US</a>
+                </div>
             </div>
         </div>
     </div>
@@ -175,17 +177,17 @@ Home
 <section>
     <div class="container-fluid pl-0">
         <div class="row align-items-center">
-            <div class="col-lg-6">
-                <img src="{{ asset('assets/images/sambal2.png') }}" alt="" class="img-fluid w-100">
+            <div class="col-lg-6 pr-0">
+                <img src="{{ asset('assets/images/sambal2.png') }}" alt="" class="img-fluid w-100 h-100">
             </div>
-            <div class="col-lg-6 w-75 text-center">
-                <h1 class="font-weight-bold">RASA BINTANG LIMA <br> HARGA KAKI LIMA</h1>
+            <div class="col-lg-6 w-75 mx-auto text-center">
+                <h1 class="font-weight-bold mt-5">RASA BINTANG LIMA <br> HARGA KAKI LIMA</h1>
                 <p class="mt-5 w-75 mx-auto">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
                     et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
                     aliquip ex ea commodo consequat.
                 </p>
-                <a href="#" class="btn btn-caktopan mt-5">MENU</a>
+                <a href="#" class="btn btn-caktopan my-5">MENU</a>
             </div>
         </div>
     </div>
@@ -194,12 +196,12 @@ Home
 <section>
     <div class="container-fluid pl-0" style="background: #FFFDE7">
         <div class="row pr-0">
-            <div class="col-12 pr-0" style="height: 500px;">
+            <div class="col-12" style="height: 100vh;">
                 <div class="centered text-center">
-                    <h1 class="font-weight-bolder text-lg">
+                    <h1 class="font-weight-bold text-lg">
                         ABOUT CAK TOPAN
                     </h1>
-                    <p class="mt-4 font-roadway w-75 mx-auto font-weight-bold text-black">
+                    <p class="mt-4 font-roadway w-100 w-md-75 mx-auto font-weight-bold text-black">
                         LOREM IPSUM DOLOR SIT AMET, CONSETETUR SADIPSCING ELITR, SED DIAM NONUMY EIRMOD TEMPOR
                         INVIDUNT UT LABORE ET DOLORE MAGNA ALIQUYAM ERAT, SED DIAM VOLUPTUA. AT VERO EOS ET
                         ACCUSAM ET JUSTO DUO DOLORES ET EA REBUM. STET CLITA KASD GUBERGREN,
