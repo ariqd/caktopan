@@ -74,6 +74,10 @@
                                 <a href="{{ url('products?filter=suspensi') }}">MENU</a>
                             </li>
 
+                            <li class="{{ request()->is('products*') ? 'sale-noti' : '' }}">
+                                <a href="{{ url('products?filter=suspensi') }}">BLOG</a>
+                            </li>
+
                             <li class="{{ request()->is('blog*') ? 'sale-noti' : '' }}">
                                 <a href="{{ url('blog') }}">ABOUT US</a>
                             </li>
