@@ -12,4 +12,7 @@ Route::middleware('admin')->prefix('admin')->name('admin.')->namespace('Admin')-
     Route::get('/', function () {
         return view('admin.index');
     })->name('index');
+
+    Route::resource('menu', 'MenuSettingsController');
+
 });

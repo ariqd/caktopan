@@ -73,10 +73,10 @@ Menu
                         @include('menu.menu-penyetan')
                     </div>
                     <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-                        @include('menu.menu-penyetan')
+                        @include('menu.menu-sambal')
                     </div>
                     <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
-                        @include('menu.menu-penyetan')
+                        @include('menu.menu-express')
                     </div>
                 </div>
             </div>

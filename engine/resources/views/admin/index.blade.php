@@ -1,6 +1,6 @@
 @extends('layouts.carbon')
 
-@section('content')
+@section('title')
 Home
 @endsection
 
