@@ -31,7 +31,7 @@ Menu
 
 @section("content")
 <section>
-    <div class="container-fluid" style="background: #FFEB3B; height: 400px;">
+    <div class="container-fluid" style="background: #FFEB3B; height: 50vh;">
         <div class="row">
             <div class="col-12">
                 <div class="text-center">

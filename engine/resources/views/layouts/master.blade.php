@@ -5,29 +5,22 @@
     <title>@yield("title")</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    {{-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"> --}}
-    {{-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script> --}}
-    <link rel="icon" type="image/png" href="{{ asset('assets/images/icons/favicon.png') }}" />
+    <link rel="icon" type="image/png" href="{{ asset('images/icons/favicon.png') }}" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    {{-- <link rel="stylesheet" type="text/css" href="{{ asset('assets/vendor/bootstrap/css/bootstrap.min.css') }}">
-    --}}
     <link rel="stylesheet" type="text/css"
-        href="{{ asset('assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/parallax.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/fonts/themify/themify-icons.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/fonts/Linearicons-Free-v1.0.0/icon-font.min.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/fonts/elegant-font/html-css/style.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/vendor/animate/animate.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/vendor/css-hamburgers/hamburgers.min.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/vendor/animsition/css/animsition.min.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/vendor/select2/select2.min.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/vendor/daterangepicker/daterangepicker.css') }}">
-    {{-- <link rel="stylesheet" type="text/css" href="{{ asset('assets/vendor/slick/slick.css') }}"> --}}
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/vendor/lightbox2/css/lightbox.min.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/util.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/main.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/caktopan.css') }}">
+        href="{{ asset('fonts/font-awesome-4.7.0/css/font-awesome.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/parallax.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('vendor/animate/animate.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('vendor/css-hamburgers/hamburgers.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('vendor/animsition/css/animsition.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('vendor/select2/select2.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('vendor/daterangepicker/daterangepicker.css') }}">
+    {{-- <link rel="stylesheet" type="text/css" href="{{ asset('vendor/slick/slick.css') }}"> --}}
+    <link rel="stylesheet" type="text/css" href="{{ asset('vendor/lightbox2/css/lightbox.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/util.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/main.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/caktopan.css') }}">
     @stack('css')
 </head>
 
@@ -44,7 +37,7 @@
 
                 <!-- Logo -->
                 <a href="index.php" class="logo col-12">
-                    <img src="{{ asset('assets/images/icons/logo.png') }}" alt="IMG-LOGO">
+                    <img src="{{ asset('images/icons/logo.png') }}" alt="IMG-LOGO">
                 </a>
 
                 <!-- Menu -->
@@ -74,13 +67,13 @@
                 <!-- Header Icon -->
                 <div class="header-icons">
                     <a href="#" class="header-wrapicon1 dis-block">
-                        <img src="{{ asset('assets/images/social-fb.png') }}" class="header-icon1 mr-3" alt="facebook">
+                        <img src="{{ asset('images/social-fb.png') }}" class="header-icon1 mr-3" alt="facebook">
                     </a>
                     <a href="#" class="header-wrapicon1 dis-block">
-                        <img src="{{ asset('assets/images/social-ig.png') }}" class="header-icon1 mr-3" alt="facebook">
+                        <img src="{{ asset('images/social-ig.png') }}" class="header-icon1 mr-3" alt="facebook">
                     </a>
                     <a href="#" class="header-wrapicon1 dis-block">
-                        <img src="{{ asset('assets/images/social-wa.png') }}" class="header-icon1" alt="facebook">
+                        <img src="{{ asset('images/social-wa.png') }}" class="header-icon1" alt="facebook">
                     </a>
 
 
@@ -98,7 +91,7 @@
         <div class="wrap_header_mobile">
             <!-- Logo moblie -->
             <a href="index.php" class="logo-mobile">
-                <img src="{{ asset('assets/images/icons/logo.png') }}" alt="IMG-LOGO">
+                <img src="{{ asset('images/icons/logo.png') }}" alt="IMG-LOGO">
             </a>
 
             <!-- Button show menu -->
@@ -170,8 +163,8 @@
             <div class="row px-5 pt-3">
                 <div class="col-12">
                     <p class="font-roadway text-white">
-                        &copy;2019 CAK TOPAN | MADE BY <a href="#"
-                            class="font-roadway text-danger text-underline">MAKAYASA ARECA</a>
+                        &copy;2019 CAK TOPAN | MADE BY: <a href="#"
+                            class="btn btn-link m-0 p-0 font-roadway text-danger">MAKAYASA ARECA</a>
                     </p>
                 </div>
             </div>
@@ -198,14 +191,14 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
-    <script type="text/javascript" src="{{ asset('assets/vendor/animsition/js/animsition.min.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('assets/vendor/select2/select2.min.js') }}"></script>
-    {{-- <script type="text/javascript" src="{{ asset('assets/vendor/slick/slick.min.js') }}"></script> --}}
-    {{-- <script type="text/javascript" src="{{ asset('assets/js/slick-custom.js') }}"></script> --}}
-    <script type="text/javascript" src="{{ asset('assets/vendor/countdowntime/countdowntime.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('assets/vendor/lightbox2/js/lightbox.min.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('assets/vendor/sweetalert/sweetalert.min.js') }}"></script>
-    <script src="{{ asset('assets/js/main.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('vendor/animsition/js/animsition.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('vendor/select2/select2.min.js') }}"></script>
+    {{-- <script type="text/javascript" src="{{ asset('vendor/slick/slick.min.js') }}"></script> --}}
+    {{-- <script type="text/javascript" src="{{ asset('js/slick-custom.js') }}"></script> --}}
+    <script type="text/javascript" src="{{ asset('vendor/countdowntime/countdowntime.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('vendor/lightbox2/js/lightbox.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('vendor/sweetalert/sweetalert.min.js') }}"></script>
+    <script src="{{ asset('js/main.js') }}"></script>
     <script>
         $('.block2-btn-addcart').each(function () {
             var nameProduct = $(this).parent().parent().parent().find('.block2-name').php();

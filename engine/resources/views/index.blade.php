@@ -33,16 +33,23 @@ Home
     }
 
     .slick-prev {
-    left: 50px;
-    z-index: 1;
+        left: 50px;
+        z-index: 1;
     }
 
     .slick-next {
-      right: 50px;
+        right: 50px;
     }
 
-    .slick-next:before,.slick-prev:before{
-      font-size: 50px;
+    .slick-next:before,
+    .slick-prev:before {
+        font-size: 50px;
+    }
+
+    img.img-insta {
+        object-fit: cover;
+        width: 320px;
+        height: 320px;
     }
 
 </style>
@@ -60,11 +67,11 @@ Home
         autoplay: true
     });
 
-    $(document).ready(function(){
-     $('.homeslide').slick({
+    $(document).ready(function () {
+        $('.homeslide').slick({
 
-     });
-   });
+        });
+    });
 
 </script>
 @endpush
@@ -72,19 +79,19 @@ Home
 @section("content")
 
 <div class="homeslide">
-  <div>
-    <div class="crop1">
-    <img src="{{ asset('assets/images/home1.png') }}" alt="">
-    <h1 class="centered text-center text-white font-weight-bolder text-xl">GEPREK JAWA TIMUR</h1>
-  </div>
+    <div>
+        <div class="crop1">
+            <img src="{{ asset('assets/images/home1.png') }}" alt="">
+            <h1 class="centered text-center text-white font-weight-bolder text-xl">GEPREK JAWA TIMUR</h1>
+        </div>
     </div>
 
     <div>
-      <div class="crop1">
-      <img src="{{ asset('assets/images/home1.png') }}" alt="">
-      <h1 class="centered text-center text-white font-weight-bolder text-xl">GEPREK JAWA TIMUR</h1>
+        <div class="crop1">
+            <img src="{{ asset('assets/images/home1.png') }}" alt="">
+            <h1 class="centered text-center text-white font-weight-bolder text-xl">GEPREK JAWA TIMUR</h1>
+        </div>
     </div>
-      </div>
 </div>
 
 <section>
@@ -145,7 +152,7 @@ Home
     <div class="container-fluid pl-0">
         <div class="row pr-0">
             <div class="col-12 pr-0 parallax sambalIm">
-                  <div class="centered text-center">
+                <div class="centered text-center">
                     <h1 class="text-white font-weight-bolder d-none d-lg-block">MACAM-MACAM SAMBAL</h1>
                     <h4 class="text-white font-weight-bolder d-block d-lg-none">MACAM-MACAM SAMBAL</h4>
                     <a href="#" class="btn btn-caktopan btn-caktopan-white text-white mt-3 w-25">MENU</a>
@@ -234,7 +241,7 @@ Home
     <div class="container-fluid pl-0">
         <div class="row align-items-center">
             <div class="col-lg-12 parallax sambalIm2">
-          </div>
+            </div>
         </div>
     </div>
 </section>
@@ -242,8 +249,10 @@ Home
 <section>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-12 pt-3">
-                <h5 class="text-center">@<span class="font-roadway">CAKTOPANPENYETAN</span></h5>
+            <div class="col-12 pt-3 text-center">
+                <a href="https://www.instagram.com/caktopanpenyetan/" target="_blank" class="btn btn-link ">
+                    <h5 class="">@<span class="font-roadway">CAKTOPANPENYETAN</span></h5>
+                </a>
             </div>
         </div>
         <div class="row mt-3">
@@ -251,8 +260,8 @@ Home
                 <div class="slick">
                     @foreach ($instagram->media() as $insta)
                     <a class="overlay-on-hover" href="{{ $insta->link }}" target="_blank">
-                        <img src="{{ $insta->images->low_resolution->url }}" alt=""
-                            class="img-fluid w-100 h-100 p-0 m-0">
+                        <img src="{{ $insta->images->standard_resolution->url }}" alt=""
+                            class="img-fluid p-0 m-0 img-insta">
                         <div class="centered text-center d-flex">
                             <h5 class="font-weight-bold text-light">
                                 <i class="fa fa-heart"></i> {{ $insta->likes->count }}

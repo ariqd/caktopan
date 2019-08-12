@@ -6,12 +6,9 @@
     <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>@yield('title') | Unicorn Admin</title>
-    <link rel="icon" href="{{ asset('ass-admin/img/logo.png') }}">
-    <link rel="stylesheet" href="{{ asset('ass-admin/plugins/font-awesome/css/font-awesome.min.css') }}">
+    <title>@yield('title') | Cak Topan Admin</title>
+    <link href="{{ asset('vendor/font-awesome/all.min.css') }}" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="{{ asset('carbon/css/styles.css') }}">
-    {{-- <link href="{{ asset('ass-admin/css/ipro.css') }}" rel="stylesheet"> --}}
-    <link href="{{ asset('ass-admin/plugins/select2/select2.min.css') }}" rel="stylesheet">
     @stack('css')
     <style>
         .btn.btn-ipro {
@@ -27,6 +24,7 @@
         .nav-link.active i {
             color: #8BC34A !important;
         }
+
     </style>
 </head>
 
@@ -38,8 +36,8 @@
             </a>
 
             <a class="navbar-brand" href="#">
-                <h4>Unicorn</h4>
-                {{-- <img src="{{ asset('ass-admin/img/logo.png') }}" width="80" alt="logo ipro"> --}}
+                <h4>Cak Topan Admin</h4>
+                {{-- <img src="{{ asset('admin/img/logo.png') }}" width="80" alt="logo ipro"> --}}
             </a>
 
             <a href="#" class="btn btn-link sidebar-toggle d-md-down-none">
@@ -79,10 +77,9 @@
     <script src="{{ asset('carbon/vendor/popper.js/popper.min.js') }}"></script>
     <script src="{{ asset('carbon/vendor/bootstrap/js/bootstrap.min.js') }}"></script>
     <script src="{{ asset('carbon/vendor/chart.js/chart.min.js') }}"></script>
+    <script src="{{ asset('carbon/vendor/sweetalert/sweetalert.min.js') }}"></script>
     <script src="{{ asset('carbon/js/carbon.js') }}"></script>
     <script src="{{ asset('carbon/js/demo.js') }}"></script>
-    <script src="{{ asset('ass-admin/plugins/sweetalert/sweetalert.min.js') }}"></script>
-    <script src="{{ asset('ass-admin/plugins/select2/select2.full.min.js') }}"></script>
     @stack('js')
     <script>
         $(document).ready(function () {
