@@ -33,13 +33,13 @@
             <li class="nav-title">Blog</li>
 
             <li class="nav-item">
-                <a href="{{ url('admin/blog') }}" class="nav-link {{ (request()->is('admin/blog*')) ? 'active' : '' }}">
+                <a href="{{ url('admin/blog') }}" class="nav-link {{ (request()->is('admin/blog')) ? 'active' : '' }}">
                     <i class="fab fa-blogger"></i> Daftar Blog
                 </a>
             </li>
 
             <li class="nav-item">
-                <a href="{{ url('admin/blog') }}" class="nav-link {{ (request()->is('admin/blog*')) ? 'active' : '' }}">
+                <a href="{{ url('admin/blog/create') }}" class="nav-link {{ (request()->is('admin/blog/create')) ? 'active' : '' }}">
                     <i class="fas fa-plus"></i> Tambah Blog
                 </a>
             </li>

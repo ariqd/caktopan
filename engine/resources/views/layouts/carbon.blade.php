@@ -9,6 +9,7 @@
     <title>@yield('title') | Cak Topan Admin</title>
     <link href="{{ asset('vendor/font-awesome/all.min.css') }}" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="{{ asset('carbon/css/styles.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/caktopan.css') }}">
     @stack('css')
     <style>
         .btn.btn-ipro {
@@ -30,7 +31,7 @@
 
 <body class="sidebar-fixed header-fixed">
     <div class="page-wrapper">
-        <nav class="navbar page-header navbar-dark bg-dark">
+        <nav class="navbar page-header navbar-dark bg-dark" style="z-index: 1000">
             <a href="#" class="btn btn-link sidebar-mobile-toggle d-md-none mr-auto">
                 <i class="fa fa-bars"></i>
             </a>

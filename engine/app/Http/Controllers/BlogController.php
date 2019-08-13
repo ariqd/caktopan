@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Blog;
 use Illuminate\Http\Request;
 
 class BlogController extends Controller
@@ -13,7 +14,9 @@ class BlogController extends Controller
      */
     public function index()
     {
-        return view('blog.index');
+        $data['blogs'] = Blog::orderBy('created_at', 'desc')->get();
+
+        return view('blog.index', $data);
     }
 
     /**
@@ -43,9 +46,11 @@ class BlogController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show($slug)
     {
-        return view('blog.show');
+        $data['blog'] = Blog::ofSlug($slug)->orderBy('created_at', 'desc')->first();
+
+        return view('blog.show', $data);
     }
 
     /**

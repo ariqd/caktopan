@@ -2,7 +2,7 @@
     <div class="row">
         <div class="col-12 col-lg-4 offset-lg-4">
             <h2 class="text-center font-roadway my-5" style="border-bottom: 1px solid #424242;">
-                PAKET
+                PAKET PENYETAN
             </h2>
         </div>
     </div>

@@ -11,11 +11,11 @@ Menu
     }
 
     .bg-grey:hover {
-        color: #212121;
+        background: #212121;
     }
 
     .bg-grey.active {
-        background: #FFFFFF !important;
+        background: #F8F9FA !important;
     }
 
     .text-md {
@@ -46,25 +46,25 @@ Menu
 
 <section>
     <div class="container-fluid" style="background: #FFFFFF;">
-        <div class="row">
+        <div class="row ">
             <div class="col-12 px-0" style="background: #FFEB3B;">
                 <nav style="background: #FFFFFF;">
-                    <div class="nav nav-tabs d-flex justify-content-center" id="nav-tab" role="tablist"
+                    <div class="nav nav-tabs d-flex flex-row justify-content-center px-0" id="nav-tab" role="tablist"
                         style="background: #FFEB3B;">
-                        <a class="nav-item nav-link bg-grey font-roadway text-center text-md rounded-lg mx-4 w-25 active"
+                        <a class="nav-item nav-link bg-grey font-roadway text-center w-25 active px-0 py-2"
                             id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home"
                             aria-selected="true">
-                            PENYETAN
+                            <h5>PENYETAN</h5>
                         </a>
-                        <a class="nav-item nav-link bg-grey font-roadway text-center text-md rounded-lg mx-4 w-25"
+                        <a class="nav-item nav-link bg-grey font-roadway text-center mx-3 mx-md-5 w-25 px-0 py-2"
                             id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab"
                             aria-controls="nav-profile" aria-selected="false">
-                            SAMBAL
+                            <h5>SAMBAL</h5>
                         </a>
-                        <a class="nav-item nav-link bg-grey font-roadway text-center text-md rounded-lg mx-4 w-25"
+                        <a class="nav-item nav-link bg-grey font-roadway text-center w-25 px-0 py-2"
                             id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab"
                             aria-controls="nav-contact" aria-selected="false">
-                            EXPRESS
+                            <h5>EXPRESS</h5>                            
                         </a>
                     </div>
                 </nav>

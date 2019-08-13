@@ -10,7 +10,6 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css"
         href="{{ asset('fonts/font-awesome-4.7.0/css/font-awesome.min.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/parallax.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('vendor/animate/animate.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('vendor/css-hamburgers/hamburgers.min.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('vendor/animsition/css/animsition.min.css') }}">
@@ -126,15 +125,18 @@
             <nav class="side-menu">
                 <ul class="main-menu">
                     <li class="item-menu-mobile">
-                        <a href="index.php">Home</a>
+                        <a href="{{ url('/') }}">Home</a>
                     </li>
 
                     <li class="item-menu-mobile">
-                        <a href="product.php">Menu</a>
+                        <a href="{{ url('menu') }}">Menu</a>
                     </li>
 
                     <li class="item-menu-mobile">
-                        <a href="blog.php">About Us</a>
+                            <a href="{{ url('blog') }}">Blog</a>
+                        </li>
+                    <li class="item-menu-mobile">
+                        <a href="{{ url('about') }}">About Us</a>
                     </li>
                 </ul>
             </nav>
@@ -193,8 +195,6 @@
     </script>
     <script type="text/javascript" src="{{ asset('vendor/animsition/js/animsition.min.js') }}"></script>
     <script type="text/javascript" src="{{ asset('vendor/select2/select2.min.js') }}"></script>
-    {{-- <script type="text/javascript" src="{{ asset('vendor/slick/slick.min.js') }}"></script> --}}
-    {{-- <script type="text/javascript" src="{{ asset('js/slick-custom.js') }}"></script> --}}
     <script type="text/javascript" src="{{ asset('vendor/countdowntime/countdowntime.js') }}"></script>
     <script type="text/javascript" src="{{ asset('vendor/lightbox2/js/lightbox.min.js') }}"></script>
     <script type="text/javascript" src="{{ asset('vendor/sweetalert/sweetalert.min.js') }}"></script>

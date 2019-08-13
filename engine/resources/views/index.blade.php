@@ -5,8 +5,9 @@ Home
 @endsection
 
 @push('css')
-<link rel="stylesheet" href="{{ asset('assets/vendor/slick/slick.css') }}">
-<link rel="stylesheet" href="{{ asset('assets/vendor/slick/slick-theme.css') }}">
+<link rel="stylesheet" href="{{ asset('vendor/slick/slick.css') }}">
+<link rel="stylesheet" href="{{ asset('vendor/slick/slick-theme.css') }}">
+<link rel="stylesheet" href="{{ asset('css/parallax.css') }}" type="text/css">
 <style>
     .slick-slide {
         position: relative;
@@ -56,39 +57,36 @@ Home
 @endpush
 
 @push('js')
-<script src="{{ asset('assets/vendor/slick/slick.js') }}"></script>
-<script type="text/javascript" src="{{ asset('assets/js/slick-custom.js') }}"></script>
+<script src="{{ asset('vendor/slick/slick.js') }}"></script>
+<script src="{{ asset('js/slick-custom.js') }}" type="text/javascript"></script>
 <script>
-    $('.slick').slick({
-        infinite: true,
-        slidesToShow: 4,
-        slidesToScroll: 4,
-        arrows: false,
-        autoplay: true
-    });
-
     $(document).ready(function () {
-        $('.homeslide').slick({
-
+        $('.slick').slick({
+            infinite: true,
+            slidesToShow: 4,
+            slidesToScroll: 4,
+            arrows: false,
+            autoplay: true
         });
+
+        $('.home-slider').slick();
     });
 
 </script>
 @endpush
 
 @section("content")
-
-<div class="homeslide">
+<div class="home-slider">
     <div>
         <div class="crop1">
-            <img src="{{ asset('assets/images/home1.png') }}" alt="">
+            <img src="{{ asset('images/home1.png') }}" alt="">
             <h1 class="centered text-center text-white font-weight-bolder text-xl">GEPREK JAWA TIMUR</h1>
         </div>
     </div>
 
     <div>
         <div class="crop1">
-            <img src="{{ asset('assets/images/home1.png') }}" alt="">
+            <img src="{{ asset('images/home1.png') }}" alt="">
             <h1 class="centered text-center text-white font-weight-bolder text-xl">GEPREK JAWA TIMUR</h1>
         </div>
     </div>
@@ -96,35 +94,32 @@ Home
 
 <section>
     <div class="container-fluid pl-0 pr-0">
-
         <div class="row align-middle no-gutters">
 
-
             <div class="col-12 col-lg-4 crop2">
-                <a href="">
-                    <img src="{{ asset('assets/images/penyetan-blur.png') }}" alt=""
+                <a href="{{ url('menu') }}">
+                    <img src="{{ asset('images/penyetan-blur.png') }}" alt="penyetan"
                         class="img-fluid img-relative w-100 h-100">
                     <h1 class="centered text-white font-weight-bolder text-lg">PENYETAN</h1>
                 </a>
             </div>
 
-
             <div class="col-12 col-lg-4 crop2">
-                <a href="">
-                    <img src="{{ asset('assets/images/sambal-blur.png') }}" alt=""
+                <a href="{{ url('menu') }}">
+                    <img src="{{ asset('images/sambal-blur.png') }}" alt="sambal"
                         class="img-fluid img-relative w-100 h-100">
                     <h1 class="centered text-white font-weight-bolder text-lg">SAMBAL</h1>
                 </a>
             </div>
 
-
             <div class="col-12 col-lg-4 crop2">
-                <a href="">
-                    <img src="{{ asset('assets/images/express-blur.png') }}" alt=""
+                <a href="{{ url('menu') }}">
+                    <img src="{{ asset('images/express-blur.png') }}" alt="express"
                         class="img-fluid img-relative w-100 h-100">
                     <h1 class="centered text-white font-weight-bolder text-lg">EXPRESS</h1>
                 </a>
             </div>
+
         </div>
     </div>
 </section>
@@ -133,7 +128,7 @@ Home
     <div class="container-fluid pr-0 pl-0">
         <div class="row align-items-center no-gutters">
             <div class="col-lg-6">
-                <img src="{{ asset('assets/images/penyetan-hd.png') }}" alt="" class="img-fluid w-100 h-100">
+                <img src="{{ asset('images/penyetan-hd.png') }}" alt="" class="img-fluid w-100 h-100">
             </div>
             <div class="col-lg-6 w-75 mx-auto text-center">
                 <h1 class="mt-5 font-weight-bold">KHAS JAWA TIMUR</h1>
@@ -142,7 +137,7 @@ Home
                     et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
                     aliquip ex ea commodo consequat.
                 </p>
-                <a href="#" class="btn btn-caktopan my-5">MENU</a>
+                <a href="{{ url('menu') }}" class="btn btn-caktopan my-5">MENU</a>
             </div>
         </div>
     </div>
@@ -155,7 +150,8 @@ Home
                 <div class="centered text-center">
                     <h1 class="text-white font-weight-bolder d-none d-lg-block">MACAM-MACAM SAMBAL</h1>
                     <h4 class="text-white font-weight-bolder d-block d-lg-none">MACAM-MACAM SAMBAL</h4>
-                    <a href="#" class="btn btn-caktopan btn-caktopan-white text-white mt-3 w-25">MENU</a>
+                    <a href="{{ url('menu') }}"
+                        class="btn btn-caktopan btn-caktopan-white text-white mt-3 w-25">MENU</a>
                 </div>
             </div>
         </div>
@@ -172,10 +168,10 @@ Home
                     et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
                     aliquip ex ea commodo consequat.
                 </p>
-                <a href="#" class="btn btn-caktopan my-5">MENU</a>
+                <a href="{{ url('menu') }}" class="btn btn-caktopan my-5">MENU</a>
             </div>
             <div class="col-lg-6 pr-0 pl-0">
-                <img src="{{ asset('assets/images/uduk.png') }}" alt="" class="img-fluid w-100 h-100">
+                <img src="{{ asset('images/uduk.png') }}" alt="" class="img-fluid w-100 h-100">
             </div>
         </div>
     </div>
@@ -188,7 +184,8 @@ Home
                 <div class="centered text-center">
                     <h1 class="text-white font-weight-bolder d-none d-lg-block">LOKASI KAMI</h1>
                     <h3 class="text-white font-weight-bolder d-block d-lg-none">LOKASI KAMI</h3>
-                    <a href="#" class="btn btn-caktopan btn-caktopan-white text-white mt-3 w-50">ABOUT US</a>
+                    <a href="{{ url('about') }}"
+                        class="btn btn-caktopan btn-caktopan-white text-white mt-3 w-50">ABOUT US</a>
                 </div>
             </div>
         </div>
@@ -199,7 +196,7 @@ Home
     <div class="container-fluid pl-0">
         <div class="row align-items-center">
             <div class="col-lg-6 pr-0">
-                <img src="{{ asset('assets/images/sambal2.png') }}" alt="" class="img-fluid w-100 h-100">
+                <img src="{{ asset('images/sambal2.png') }}" alt="" class="img-fluid w-100 h-100">
             </div>
             <div class="col-lg-6 w-75 mx-auto text-center">
                 <h1 class="font-weight-bold mt-5">RASA BINTANG LIMA <br> HARGA KAKI LIMA</h1>
@@ -208,7 +205,7 @@ Home
                     et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
                     aliquip ex ea commodo consequat.
                 </p>
-                <a href="#" class="btn btn-caktopan my-5">MENU</a>
+                <a href="{{ url('menu') }}" class="btn btn-caktopan my-5">MENU</a>
             </div>
         </div>
     </div>

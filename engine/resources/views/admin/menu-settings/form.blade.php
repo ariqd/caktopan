@@ -46,8 +46,6 @@
                                 <img src="{{ asset("uploads/menus/$menu->image") }}" alt="" class="img-fluid w-50" />
                             </div>
                         </div>
-                        @endif
-
                         <div class="form-group row">
                             <label for="name" class="col-md-3 col-form-label text-md-right">
                                 Ubah Gambar<br>
@@ -63,6 +61,22 @@
                                     class="form-control">
                             </div>
                         </div>
+                        @else
+                        <div class="form-group row">
+                            <label for="name" class="col-md-3 col-form-label text-md-right">
+                                Gambar
+                            </label>
+                            <div class="col-md-7">
+                                <img onclick=" showupload('image1')" id="image1-show"
+                                    src="{{ asset("images/add_image.png") }}" alt="your image" class="img-fluid w-50"
+                                    style="cursor:pointer;" />
+                            </div>
+                            <div class="col-md-7 d-none">
+                                <input type="file" name="image" onchange="readURL(this)" id="image1"
+                                    class="form-control">
+                            </div>
+                        </div>
+                        @endif
 
                         <div class="form-group row">
                             <label for="name" class="col-md-3 col-form-label text-md-right">Nama</label>
