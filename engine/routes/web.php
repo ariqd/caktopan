@@ -15,4 +15,8 @@ Route::middleware('admin')->prefix('admin')->name('admin.')->namespace('Admin')-
     Route::resource('menu', 'MenuSettingsController');
     Route::resource('blog', 'BlogSettingsController');
 
+    Route::get('about', 'AboutSettingsController@index');
+    Route::post('about/first-section', 'AboutSettingsController@updateFirstSection');
+    Route::post('about/second-section', 'AboutSettingsController@updateSecondSection');
+
 });

@@ -49,8 +49,8 @@ Home
 
     img.img-insta {
         object-fit: cover;
-        width: 320px;
-        height: 320px;
+        width: 350px;
+        height: 350px;
     }
 
 </style>

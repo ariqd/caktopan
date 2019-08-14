@@ -4,12 +4,6 @@
 Menu
 @endsection
 
-@push('css')
-<style>
-
-</style>
-@endpush
-
 @section("content")
 <section>
     <div class="container-fluid" style="background: #FFFDE7; height: 50vh;">
@@ -28,58 +22,28 @@ Menu
 <section class="pb-5">
     <div class="container">
         <div class="row">
-            <div class="col-12 col-lg-8 offset-lg-2 pt-5 text-center">
+            <div class="col-12 col-lg-8 offset-lg-2 pt-5 text-center ">
                 <h3 class="font-roadway">
-                    COMPANY PROFILE
+                    {{ strtoupper($about_first_title) }}
                 </h3>
-                <p class="pt-3 font-roadway">
-                    LOREM IPSUM DOLOR SIT AMET, CONSETETUR SADIPSCING ELITR, SED DIAM NONUMY
-                    EIRMOD TEMPOR INVIDUNT UT LABORE ET DOLORE MAGNA ALIQUYAM ERAT, SED DIAM VOLUPTUA. AT VERO EOS ET
-                    ACCUSAM ET JUSTO DUO DOLORES ET EA REBUM. STET CLITA KASD GUBERGREN, NO SEA TAKIMATA SANCTUS EST
-                    LOREM IPSUM DOLOR SIT AMET. LOREM IPSUM DOLOR SIT AMET,
-                </p>
-                <p class="pt-3 font-roadway">
-                    LOREM IPSUM DOLOR SIT AMET, CONSETETUR SADIPSCING ELITR, SED DIAM NONUMY
-                    EIRMOD TEMPOR INVIDUNT UT LABORE ET DOLORE MAGNA ALIQUYAM ERAT, SED DIAM VOLUPTUA. AT VERO EOS ET
-                    ACCUSAM ET JUSTO DUO DOLORES ET EA REBUM. STET CLITA KASD GUBERGREN, NO SEA TAKIMATA SANCTUS EST
-                    LOREM IPSUM DOLOR SIT AMET. LOREM IPSUM DOLOR SIT AMET,
-                </p>
-            </div>
-        </div>
-    </div>
-</section>
-
-{{-- <section>
-    <div class="container-fluid" style="background: yellow; ">
-        <div class="row">
-            <div class="col-12 px-0">
-                <div style="height: 400px;">
-                    {!! Mapper::render() !!}
+                <div class="mt-3">
+                    {!! strtoupper($about_first_text) !!}
                 </div>
             </div>
         </div>
     </div>
-</section> --}}
+</section>
 
 <section class="pb-5">
     <div class="container">
         <div class="row">
             <div class="col-12 col-lg-8 offset-lg-2 pt-5 text-center">
                 <h3 class="font-roadway">
-                    CAK TOPAN'S HISTORY
+                    {{ strtoupper($about_second_title) }}
                 </h3>
-                <p class="pt-3 font-roadway">
-                    LOREM IPSUM DOLOR SIT AMET, CONSETETUR SADIPSCING ELITR, SED DIAM NONUMY
-                    EIRMOD TEMPOR INVIDUNT UT LABORE ET DOLORE MAGNA ALIQUYAM ERAT, SED DIAM VOLUPTUA. AT VERO EOS ET
-                    ACCUSAM ET JUSTO DUO DOLORES ET EA REBUM. STET CLITA KASD GUBERGREN, NO SEA TAKIMATA SANCTUS EST
-                    LOREM IPSUM DOLOR SIT AMET. LOREM IPSUM DOLOR SIT AMET,
-                </p>
-                <p class="pt-3 font-roadway">
-                    LOREM IPSUM DOLOR SIT AMET, CONSETETUR SADIPSCING ELITR, SED DIAM NONUMY
-                    EIRMOD TEMPOR INVIDUNT UT LABORE ET DOLORE MAGNA ALIQUYAM ERAT, SED DIAM VOLUPTUA. AT VERO EOS ET
-                    ACCUSAM ET JUSTO DUO DOLORES ET EA REBUM. STET CLITA KASD GUBERGREN, NO SEA TAKIMATA SANCTUS EST
-                    LOREM IPSUM DOLOR SIT AMET. LOREM IPSUM DOLOR SIT AMET,
-                </p>
+                <div class="mt-3">
+                    {!! strtoupper($about_second_text) !!}
+                </div>
             </div>
         </div>
     </div>
