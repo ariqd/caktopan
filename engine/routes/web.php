@@ -19,4 +19,8 @@ Route::middleware('admin')->prefix('admin')->name('admin.')->namespace('Admin')-
     Route::post('about/first-section', 'AboutSettingsController@updateFirstSection');
     Route::post('about/second-section', 'AboutSettingsController@updateSecondSection');
 
+    Route::get('slider', 'SliderController@index');
+    Route::post('slider', 'SliderController@store');
+
+
 });

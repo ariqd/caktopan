@@ -77,19 +77,16 @@ Home
 
 @section("content")
 <div class="home-slider">
+    @foreach ($sliders as $slider)
+    @if (Arr::exists($slider, 'image'))
     <div>
         <div class="crop1">
-            <img src="{{ asset('images/home1.png') }}" alt="">
-            <h1 class="centered text-center text-white font-weight-bolder text-xl">GEPREK JAWA TIMUR</h1>
+            <img src="{{ asset('uploads/sliders/'.$slider['image']) }}" alt="" class="img-fluid w-100 h-100">
+            <h1 class="centered text-center text-white font-weight-bolder text-xl">{{ strtoupper($slider['text']) }}</h1>
         </div>
     </div>
-
-    <div>
-        <div class="crop1">
-            <img src="{{ asset('images/home1.png') }}" alt="">
-            <h1 class="centered text-center text-white font-weight-bolder text-xl">GEPREK JAWA TIMUR</h1>
-        </div>
-    </div>
+    @endif
+    @endforeach
 </div>
 
 <section>
@@ -184,8 +181,8 @@ Home
                 <div class="centered text-center">
                     <h1 class="text-white font-weight-bolder d-none d-lg-block">LOKASI KAMI</h1>
                     <h3 class="text-white font-weight-bolder d-block d-lg-none">LOKASI KAMI</h3>
-                    <a href="{{ url('about') }}"
-                        class="btn btn-caktopan btn-caktopan-white text-white mt-3 w-50">ABOUT US</a>
+                    <a href="{{ url('about') }}" class="btn btn-caktopan btn-caktopan-white text-white mt-3 w-50">ABOUT
+                        US</a>
                 </div>
             </div>
         </div>

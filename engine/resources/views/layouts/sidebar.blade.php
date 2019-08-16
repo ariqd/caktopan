@@ -1,11 +1,23 @@
 <div class="sidebar">
     <nav class="sidebar-nav">
-        <ul class="nav">
+        <ul class="nav mb-5">
             <li class="nav-title">Home</li>
 
             <li class="nav-item">
                 <a href="{{ url('admin') }}" class="nav-link {{ (request()->is('admin')) ? 'active' : '' }}">
                     <i class="fas fa-home"></i> Home
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a href="{{ url('admin/slider') }}" class="nav-link {{ (request()->is('admin/slider')) ? 'active' : '' }}">
+                    <i class="fas fa-image"></i> Slider
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a href="{{ url('/') }}" class="nav-link {{ (request()->is('/')) ? 'active' : '' }}">
+                    <i class="fas fa-eye"></i> Lihat Halaman Home
                 </a>
             </li>
 
@@ -25,10 +37,10 @@
             </li>
 
             <li class="nav-item">
-                    <a href="{{ url('menu') }}" class="nav-link">
-                        <i class="fas fa-eye"></i> Lihat Halaman Menu
-                    </a>
-                </li>
+                <a href="{{ url('menu') }}" class="nav-link">
+                    <i class="fas fa-eye"></i> Lihat Halaman Menu
+                </a>
+            </li>
 
             <li class="nav-title">Blog</li>
 
@@ -39,7 +51,8 @@
             </li>
 
             <li class="nav-item">
-                <a href="{{ url('admin/blog/create') }}" class="nav-link {{ (request()->is('admin/blog/create')) ? 'active' : '' }}">
+                <a href="{{ url('admin/blog/create') }}"
+                    class="nav-link {{ (request()->is('admin/blog/create')) ? 'active' : '' }}">
                     <i class="fas fa-plus"></i> Tambah Blog
                 </a>
             </li>
@@ -56,6 +69,12 @@
                 <a href="{{ url('admin/about') }}"
                     class="nav-link {{ (request()->is('admin/about*')) ? 'active' : '' }}">
                     <i class="fas fa-info-circle"></i> About Us
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a href="{{ url('about') }}" class="nav-link {{ (request()->is('about')) ? 'active' : '' }}">
+                    <i class="fas fa-eye"></i> Lihat Halaman About
                 </a>
             </li>
 
