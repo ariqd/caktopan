@@ -21,6 +21,7 @@
                         <h4 class="pt-3">
                             Rp{{ number_format($sambal->price, 0, ',', '.') }}
                         </h4>
+                        <a href="{{$sambal->url}}"><img src="{{asset('images/icons/tokped.png')}}" style="height: auto; width: 60%; margin-top: 4%;"></a>
                     </div>
                 </div>
                 @endforeach
