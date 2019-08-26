@@ -7,7 +7,7 @@ Home
 @push('css')
 <link rel="stylesheet" href="{{ asset('vendor/slick/slick.css') }}">
 <link rel="stylesheet" href="{{ asset('vendor/slick/slick-theme.css') }}">
-<link rel="stylesheet" href="{{ asset('css/parallax.css') }}" type="text/css">
+<link rel="stylesheet" href="{{ asset('css/parallax.css') }}">
 <style>
     .slick-slide {
         position: relative;
