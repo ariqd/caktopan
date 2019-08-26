@@ -36,7 +36,7 @@
 
                 <!-- Logo -->
                 <a href="index.php" class="logo col-12">
-                    <img src="{{ asset('images/icons/logo.png') }}" alt="IMG-LOGO">
+                    <img src="{{ asset('images/icons/Logo.png') }}" alt="IMG-LOGO">
                 </a>
 
                 <!-- Menu -->
