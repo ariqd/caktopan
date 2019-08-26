@@ -28,6 +28,17 @@
         $("#hyperlink").hide()
     }
 
+    function display() {
+        var cat = $("#category").val();
+        if(cat == "Paket") {
+            $("#hyperlink").hide()
+        } else if(cat == "Express") {
+            $("#hyperlink").hide()
+        } else if(cat == "Sambal") {
+            $("#hyperlink").show()
+        }
+    }
+
 </script>
 @endpush
 
@@ -103,7 +114,7 @@
                             <label for="category" class="col-md-3 col-form-label text-md-right">Kategori</label>
 
                             <div class="col-md-7">
-                                <select name="category" id="category" 
+                                <select name="category" id="category" onclick="display()"
                                     class="form-control @error('category') is-invalid @enderror">
                                     @foreach ($categories as $category)
                                     <option value="{{ $category }}"
