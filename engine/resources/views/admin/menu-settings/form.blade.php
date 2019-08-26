@@ -145,6 +145,22 @@
                             </div>
                         </div>
 
+                        <div class="form-group row">
+                            <label for="url" class="col-md-3 col-form-label text-md-right">Link TokPed</label>
+
+                            <div class="col-md-7">
+                                <input id="url" type="text" class="form-control @error('url') is-invalid @enderror"
+                                    name="url" value="{{ @$edit ? $menu->url : old('url') }}" required>
+
+                                @error('url')
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                                @enderror
+                            </div>
+                        </div>
+
+
                         <div class="form-group row mb-0">
                             <div class="col-md-8 offset-md-3">
                                 <button type="submit" class="btn btn-danger">
