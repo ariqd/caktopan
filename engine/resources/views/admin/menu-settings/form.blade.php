@@ -22,6 +22,12 @@
         }
     }
 
+    if($("#category").val() == "Sambal") {
+        $("#hyperlink").show()
+    } else {
+        $("#hyperlink").hide()
+    }
+
 </script>
 @endpush
 
@@ -97,7 +103,7 @@
                             <label for="category" class="col-md-3 col-form-label text-md-right">Kategori</label>
 
                             <div class="col-md-7">
-                                <select name="category" id="category"
+                                <select name="category" id="category" 
                                     class="form-control @error('category') is-invalid @enderror">
                                     @foreach ($categories as $category)
                                     <option value="{{ $category }}"
@@ -145,7 +151,7 @@
                             </div>
                         </div>
 
-                        <div class="form-group row">
+                        <div class="form-group row" id="hyperlink">
                             <label for="url" class="col-md-3 col-form-label text-md-right">Link TokPed</label>
 
                             <div class="col-md-7">
